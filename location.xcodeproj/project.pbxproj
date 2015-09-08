@@ -77,7 +77,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D61D60651B9EFC28006E4739 = {
+		C35F69281B9F45DD0011012C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				D61D609F1B9F0AD7006E4739 /* MapKit.framework */,
@@ -85,8 +85,16 @@
 				D61D609B1B9EFD56006E4739 /* Foundation.framework */,
 				D61D60991B9EFD4A006E4739 /* UIKit.framework */,
 				D61D60971B9EFD3D006E4739 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D61D60651B9EFC28006E4739 = {
+			isa = PBXGroup;
+			children = (
 				D61D60701B9EFC28006E4739 /* location */,
 				D61D608A1B9EFC29006E4739 /* locationTests */,
+				C35F69281B9F45DD0011012C /* Frameworks */,
 				D61D606F1B9EFC28006E4739 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -440,6 +448,7 @@
 				D61D60931B9EFC29006E4739 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D61D60941B9EFC29006E4739 /* Build configuration list for PBXNativeTarget "locationTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +457,7 @@
 				D61D60961B9EFC29006E4739 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

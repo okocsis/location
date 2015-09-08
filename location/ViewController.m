@@ -9,7 +9,15 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+- (IBAction)btnAction:(id)sender;
+@property (nonatomic,strong) CLLocationManager * locationManager;
 
+@property (weak, nonatomic) IBOutlet UILabel *latitude;
+@property (weak, nonatomic) IBOutlet UILabel *longitude;
+
+- (IBAction)btnStop:(id)sender;
+
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @end
 
 @implementation ViewController
@@ -20,18 +28,19 @@
 
 
 - (void)viewDidLoad {
-    
+    [super viewDidLoad];
  
-
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     self.locationManager.delegate = self;
     [self.locationManager startUpdatingLocation];
-       [super viewDidLoad];
+    
     
 }
 
--(void) locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
+-(void) locationManager:(CLLocationManager *)manager
+    didUpdateToLocation:(CLLocation *)newLocation
+           fromLocation:(CLLocation *)oldLocation {
     
     self.latitude.text = [ NSString stringWithFormat:@"%f", newLocation.coordinate.latitude];
     self.longitude.text = [ NSString stringWithFormat:@"%f", newLocation.coordinate.longitude];
@@ -39,8 +48,7 @@
     
 }
 
--(void) viewDidUnload
-{
+-(void) viewDidUnload {
     [self setLatitude:nil];
     [self setLongitude:nil];
     [self setMapView:nil];
