@@ -7,9 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate>
 
+- (IBAction)btnAction:(id)sender;
+@property (nonatomic,strong) CLLocationManager * locationManager;
+
+
+
+
+
+@property (weak, nonatomic) IBOutlet UILabel *latitude;
+@property (weak, nonatomic) IBOutlet UILabel *longitude;
+
+- (IBAction)btnStop:(id)sender;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
 

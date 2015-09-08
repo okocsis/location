@@ -14,6 +14,11 @@
 		D61D607F1B9EFC28006E4739 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D61D607E1B9EFC28006E4739 /* Images.xcassets */; };
 		D61D60821B9EFC28006E4739 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D61D60801B9EFC28006E4739 /* LaunchScreen.xib */; };
 		D61D608E1B9EFC29006E4739 /* locationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D61D608D1B9EFC29006E4739 /* locationTests.m */; };
+		D61D60981B9EFD3D006E4739 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61D60971B9EFD3D006E4739 /* CoreLocation.framework */; };
+		D61D609A1B9EFD4A006E4739 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61D60991B9EFD4A006E4739 /* UIKit.framework */; };
+		D61D609C1B9EFD56006E4739 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61D609B1B9EFD56006E4739 /* Foundation.framework */; };
+		D61D609E1B9EFD61006E4739 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61D609D1B9EFD61006E4739 /* CoreGraphics.framework */; };
+		D61D60A01B9F0AD7006E4739 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61D609F1B9F0AD7006E4739 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,13 @@
 		D61D60871B9EFC29006E4739 /* locationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = locationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61D608C1B9EFC29006E4739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D61D608D1B9EFC29006E4739 /* locationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = locationTests.m; sourceTree = "<group>"; };
+		D61D60971B9EFD3D006E4739 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D61D60991B9EFD4A006E4739 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D61D609B1B9EFD56006E4739 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D61D609D1B9EFD61006E4739 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D61D609F1B9F0AD7006E4739 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D61D60D91B9F26EC006E4739 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Main.strings; sourceTree = "<group>"; };
+		D61D60DA1B9F26EC006E4739 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D61D60A01B9F0AD7006E4739 /* MapKit.framework in Frameworks */,
+				D61D609E1B9EFD61006E4739 /* CoreGraphics.framework in Frameworks */,
+				D61D609C1B9EFD56006E4739 /* Foundation.framework in Frameworks */,
+				D61D609A1B9EFD4A006E4739 /* UIKit.framework in Frameworks */,
+				D61D60981B9EFD3D006E4739 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,11 @@
 		D61D60651B9EFC28006E4739 = {
 			isa = PBXGroup;
 			children = (
+				D61D609F1B9F0AD7006E4739 /* MapKit.framework */,
+				D61D609D1B9EFD61006E4739 /* CoreGraphics.framework */,
+				D61D609B1B9EFD56006E4739 /* Foundation.framework */,
+				D61D60991B9EFD4A006E4739 /* UIKit.framework */,
+				D61D60971B9EFD3D006E4739 /* CoreLocation.framework */,
 				D61D60701B9EFC28006E4739 /* location */,
 				D61D608A1B9EFC29006E4739 /* locationTests */,
 				D61D606F1B9EFC28006E4739 /* Products */,
@@ -248,6 +270,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D61D607C1B9EFC28006E4739 /* Base */,
+				D61D60D91B9F26EC006E4739 /* hu */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -256,6 +279,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				D61D60811B9EFC28006E4739 /* Base */,
+				D61D60DA1B9F26EC006E4739 /* hu */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
