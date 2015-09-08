@@ -36,5 +36,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We need to use the gps! Why? Just because!</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>We need to use the gps! Why? Just because!</string>
 </dict>
 </plist>
