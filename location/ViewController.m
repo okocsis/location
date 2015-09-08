@@ -9,15 +9,16 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-- (IBAction)btnAction:(id)sender;
+
 @property (nonatomic,strong) CLLocationManager * locationManager;
 
 @property (weak, nonatomic) IBOutlet UILabel *latitudeLabel;
 @property (weak, nonatomic) IBOutlet UILabel *longitudeLabel;
 
-- (IBAction)btnStop:(id)sender;
-
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
+
+- (IBAction)startButtonTouched:(id)sender;
+- (IBAction)stopButtonTouched:(id)sender;
 @end
 
 @implementation ViewController
@@ -51,11 +52,11 @@
    
 }
 
-- (IBAction)btnAction:(id)sender {
+- (IBAction)startButtonTouched:(id)sender {
     
     [self.locationManager startUpdatingLocation];
 }
-- (IBAction)btnStop:(id)sender {
+- (IBAction)stopButtonTouched:(id)sender {
     
     
     [self.locationManager stopUpdatingLocation];

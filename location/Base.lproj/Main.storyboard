@@ -25,7 +25,7 @@
                                     <rect key="frame" x="166" y="119" width="68" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="btnAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="x3Y-6T-aGP"/>
+                                    <action selector="startButtonTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UX9-Fc-hM2"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ta-Ev-UWJ">
@@ -55,7 +55,7 @@
                                     <rect key="frame" x="252" y="119" width="33" height="30"/>
                                 </variation>
                                 <connections>
-                                    <action selector="btnStop:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UaY-Qd-iRQ"/>
+                                    <action selector="stopButtonTouched:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xiz-ea-4Xj"/>
                                 </connections>
                             </button>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3Sk-Dh-Ihg">
