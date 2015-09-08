@@ -48,12 +48,6 @@
     
 }
 
--(void) viewDidUnload {
-    [self setLatitude:nil];
-    [self setLongitude:nil];
-    [self setMapView:nil];
-    [super viewDidUnload];
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
