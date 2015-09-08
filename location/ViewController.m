@@ -22,9 +22,6 @@
 
 @implementation ViewController
 
-@synthesize locationManager;
-@synthesize latitudeLabel;
-@synthesize longitudeLabel;
 
 
 - (void)viewDidLoad {
