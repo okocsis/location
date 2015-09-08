@@ -12,8 +12,8 @@
 - (IBAction)btnAction:(id)sender;
 @property (nonatomic,strong) CLLocationManager * locationManager;
 
-@property (weak, nonatomic) IBOutlet UILabel *latitude;
-@property (weak, nonatomic) IBOutlet UILabel *longitude;
+@property (weak, nonatomic) IBOutlet UILabel *latitudeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *longitudeLabel;
 
 - (IBAction)btnStop:(id)sender;
 
@@ -23,8 +23,8 @@
 @implementation ViewController
 
 @synthesize locationManager;
-@synthesize latitude;
-@synthesize longitude;
+@synthesize latitudeLabel;
+@synthesize longitudeLabel;
 
 
 - (void)viewDidLoad {
@@ -42,8 +42,8 @@
     didUpdateToLocation:(CLLocation *)newLocation
            fromLocation:(CLLocation *)oldLocation {
     
-    self.latitude.text = [ NSString stringWithFormat:@"%f", newLocation.coordinate.latitude];
-    self.longitude.text = [ NSString stringWithFormat:@"%f", newLocation.coordinate.longitude];
+    self.latitudeLabel.text = [ NSString stringWithFormat:@"%f", newLocation.coordinate.latitude];
+    self.longitudeLabel.text = [ NSString stringWithFormat:@"%f", newLocation.coordinate.longitude];
     self.mapView.region = MKCoordinateRegionMake(newLocation.coordinate, MKCoordinateSpanMake(0.01, 0.01));
     
 }

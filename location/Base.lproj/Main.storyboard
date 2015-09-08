@@ -86,8 +86,8 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="latitude" destination="IAC-8W-aXE" id="f1C-uE-hJj"/>
-                        <outlet property="longitude" destination="7ta-Ev-UWJ" id="yda-2i-ruZ"/>
+                        <outlet property="latitudeLabel" destination="IAC-8W-aXE" id="rcV-8W-6k8"/>
+                        <outlet property="longitudeLabel" destination="7ta-Ev-UWJ" id="EkP-D6-CeX"/>
                         <outlet property="mapView" destination="3Sk-Dh-Ihg" id="62G-z5-IGX"/>
                     </connections>
                 </viewController>
